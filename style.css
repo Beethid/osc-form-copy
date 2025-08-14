@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.kepala {
+  text-align: center;
+}
+
+:root {
+  --outline: #afa6ff;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.form h2 {
+  color: white;
+}
+
+.form p {
+  color: white;
+}
+
+.form {
+  background: linear-gradient(135deg, #656677, #070b1b);
+  width: 100vw;
+  height: auto;
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  max-width: 450px;
+  width: 100%;
+  border: 1px solid var(--outline);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: #212638;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  color: white;
+}
+select {
+  width: 100%;
+  max-width: 100%;
+  background-color: #2d3350;
+  padding: 0.5rem;
+  height: 40px;
+  border: solid 1px var(--outline);
+  border-radius: 10px;
+}
+input {
+  padding: 0.5rem;
+  background-color: #2d3350;
+  width: 100%;
+  max-width: 100%;
+  height: 40px;
+  border: solid 1px var(--outline);
+  border-radius: 10px;
+}
+
+.isian span {
+  font-weight: 800;
+}
+
+.isian p {
+  color: #a0a0a0;
+}
+
+.labels {
+  display: flex;
+  align-items: center;
+}
+
+input:focus,
+select:focus {
+  transform: scale(1.05);
+
+  outline: none;
+  border: 2px solid blue;
+}
+
+input,
+select {
+  transition: 100ms all linear;
+  color: white;
+  font-size: 0.9rem;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-group:last-child {
+  padding: 1rem;
+  background-color: rgb(218, 87, 0);
+  transition: 100ms all linear;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
+.form-group:last-child:hover {
+  background-color: rgb(255, 102, 0);
+  transform: scale(1.1);
+}
+
+.send {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: 800;
+}
