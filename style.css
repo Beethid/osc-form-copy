@@ -5,6 +5,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.logo {
+  display: flex;
+  gap: 1rem;
+}
+
 .kepala {
   text-align: center;
 }
@@ -30,6 +35,7 @@ body {
   width: 100vw;
   height: auto;
   display: flex;
+  z-index: -2;
   padding: 2rem;
   gap: 1rem;
   align-items: center;
@@ -39,6 +45,7 @@ body {
 
 form {
   max-width: 450px;
+  position: relative;
   width: 100%;
   border: 1px solid var(--outline);
   height: auto;
@@ -121,7 +128,7 @@ input::-webkit-outer-spin-button {
 
 .form-group:last-child:hover {
   background-color: rgb(255, 102, 0);
-  transform: scale(1.03);
+  transform: scale(1.1);
 }
 
 .send {
